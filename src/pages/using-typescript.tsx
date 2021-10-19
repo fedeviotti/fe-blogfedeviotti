@@ -11,9 +11,10 @@ type DataProps = {
   }
 }
 
-const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+const UsingTypescript: React.FC<PageProps<DataProps>> = (props) => (
   <Layout>
     <Seo title="Using TypeScript" />
+    <pre>{JSON.stringify(props, null, 2)}</pre>
     <h1>Gatsby supports TypeScript by default!</h1>
     <p>
       This means that you can create and write <em>.ts/.tsx</em> files for your
@@ -25,8 +26,8 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       run <em>tsc --init</em> to create a <em>tsconfig</em> file.
     </p>
     <p>
-      You're currently on the page "{path}" which was built on{" "}
-      {data.site.buildTime}.
+      You're currently on the page "{props.path}" which was built on{" "}
+      {props.data.site.buildTime}.
     </p>
     <p>
       To learn more, head over to our{" "}
