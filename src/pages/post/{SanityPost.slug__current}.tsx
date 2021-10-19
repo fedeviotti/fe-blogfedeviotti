@@ -57,6 +57,7 @@ const SanityPost: React.FC<PageProps<DataProps>> = ({ data }) => {
       )}
       <h1>{data?.sanityPost?.title}</h1>
       {post.body.map(body => body.children.map(child => <p>{child.text}</p>))}
+      {/*  TODO: add back to home page link */}
     </Layout>
   );
 };

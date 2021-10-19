@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Federico Viotti's blog`,
-    description: `The wonderful blog of Federico Viotti, powered by Gatsby and Sanity.`,
+    title: `Federico Viotti's Space`,
+    description: `The wonderful site of Federico Viotti, powered by Gatsby and Sanity.`,
     author: `@fedeviotti`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
@@ -42,6 +42,6 @@ module.exports = {
         projectId: 'b91afjhv',
         dataset: 'production',
       },
-    }
+    },
   ],
-}
+};
